@@ -314,9 +314,60 @@ You can structure it as:
 ```text
 SYSTEM:
 ...
+System Prompt:
+You are one of the team members.
+Your job is to write a weekly activity report.
+Always be clear, concise, and structured. 
+
+Task: Write a Weekly Activity Report.
+
+Context: Based on the input from the all team members, prepare a weekly report for the manager.
+
+Output: Professional way.
+
+Constrains:
+ - Highlight important points and actions.
+ - Professional tone.
+ - Structures the output.
+
+Instructions:
+ - The report includes Completed tasks, Blockers, Time spent, and Notes (often inconsistent).
+ - Identify blockers and highlight the risks.
+ - Create a structured overview.
+
+Example Input: 
+
+Erik: Worked on login bug, partially fixed. Still issues with API. About 6 hours debugging. Blocked due to missing access.
+
+Anna: Finished dashboard UI. Helped team with testing. No blockers. Worked ~8h/day.
+
+Johan: Started payment integration. Not finished yet. Unclear requirements.
 
 USER:
 ...
+
+Weekly Activity Report
+
+1. Completed Tasks:
+ Anna completed the dashboard UI and assisted the team with testing.
+ Erik partially fixed the login bug.
+
+2. Ongoing Work:
+ Johan began payment integration, but it is not finished due to unclear requirements.
+ Erik continues to debug API-related issues.
+
+3. Blockers & Risks:
+ Erik is blocked by missing API access, impacting progress on the login bug.
+ Johan faces unclear requirements for payment integration, which may delay completion.
+ Risks include potential delays if API access and requirements are not resolved promptly.
+
+4. Time Spent:
+ Erik: ~6 hours on debugging this week.
+ Anna: Approximately 8 hours per day.
+
+5. Notes:
+ Timely resolution of API access and clearer requirements for payment features are crucial to avoid project delays.
+
 ```
 
 > Tip: Focus on extracting insights and structuring information clearly.
